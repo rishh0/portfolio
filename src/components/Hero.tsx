@@ -105,8 +105,8 @@ export function Hero() {
           >
             <div>
               <p className="font-mono text-[11px] tracking-wider text-subtle uppercase">Latest build</p>
-              <p className="mt-1 text-sm font-medium text-fg">SEBI Compliance Assistant</p>
-              <p className="mt-0.5 text-xs text-muted">18/20 correct · 0 hallucinations on eval</p>
+              <p className="mt-1 text-sm font-medium text-fg">Minimi Agent</p>
+              <p className="mt-0.5 text-xs text-muted">Memory across chats · 38/38 eval checks</p>
             </div>
             <ArrowUpRight
               size={18}

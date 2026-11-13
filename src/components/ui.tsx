@@ -39,14 +39,6 @@ export function Section({
   );
 }
 
-export function Tag({ children }: { children: ReactNode }) {
-  return (
-    <span className="inline-flex items-center rounded-md border border-line bg-surface px-2.5 py-1 font-mono text-[12px] leading-none text-muted">
-      {children}
-    </span>
-  );
-}
-
 const base =
   "inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-200 whitespace-nowrap";
 

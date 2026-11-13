@@ -73,7 +73,8 @@ export type Project = {
   description: string;
   highlights: string[];
   stack: string[];
-  live: string;
+  /** Live URL; omitted for projects that only run locally */
+  live?: string;
   github?: string;
   /** Path in /public, or undefined when no genuine preview is available */
   image?: string;
@@ -81,7 +82,20 @@ export type Project = {
   note?: string;
 };
 
-export const featuredProject: Project = {
+export type FeaturedProject = Project & {
+  label: string;
+  stats: { value: string; label: string }[];
+  statsNote: string;
+};
+
+const sebi: FeaturedProject = {
+  label: "Featured · RAG",
+  stats: [
+    { value: "18/20", label: "Fully correct" },
+    { value: "2/20", label: "Partially correct" },
+    { value: "0", label: "Hallucinated" },
+  ],
+  statsNote: "Results on a 20-question evaluation set.",
   name: "SEBI Trading Compliance Assistant",
   tagline: "RAG assistant for Indian traders",
   description:
@@ -100,11 +114,33 @@ export const featuredProject: Project = {
     "SEBI Trading Compliance Assistant answering a question about the peak margin rule, with cited source documents",
 };
 
-export const evalStats = [
-  { value: "18/20", label: "Fully correct" },
-  { value: "2/20", label: "Partially correct" },
-  { value: "0", label: "Hallucinated" },
-];
+const minimi: FeaturedProject = {
+  label: "Featured · AI Agent",
+  stats: [
+    { value: "38/38", label: "Eval checks passed" },
+    { value: "65s→7s", label: "5-product re-check" },
+    { value: "6", label: "Multi-day scenarios" },
+  ],
+  statsNote: "Scenario evals run with a fake clock and real API calls.",
+  name: "Minimi Agent",
+  tagline: "Chat agent with long-term memory",
+  description:
+    "A web-search agent that remembers past conversations, understands dates like \"last Tuesday\" in your timezone, and re-checks its own earlier answers.",
+  highlights: [
+    "Hand-written agent loop (no framework) with parallel web-search calls and streamed responses",
+    "Memory across conversations in SQLite, retrieved by date range and full-text search before the model runs",
+    "Extracts checkable claims from answers so \"is this still correct?\" becomes a re-verification checklist",
+    "Profiled rate-limit waits and added query and result budgets, cutting a 5-product re-check from 65s to 7s",
+  ],
+  stack: ["TypeScript", "Next.js", "Node.js", "Groq", "Tavily", "SQLite", "Zod"],
+  github: "https://github.com/rishh0/minimi-agent",
+  image: "/projects/minimi.jpg",
+  imageAlt:
+    "Minimi Agent recalling a CRM shortlist from Monday and re-verifying each tool's pricing in a cited comparison table",
+  note: "Runs locally with your own API keys",
+};
+
+export const featuredProjects: FeaturedProject[] = [sebi, minimi];
 
 export const projects: Project[] = [
   {

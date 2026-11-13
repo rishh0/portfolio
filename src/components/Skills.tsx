@@ -1,6 +1,7 @@
 import { Braces, Code2, Database, Sparkles, Wrench, type LucideIcon } from "lucide-react";
 import { skills } from "@/lib/data";
-import { Section, Tag } from "./ui";
+import { Section } from "./ui";
+import { TechTag } from "./TechTag";
 
 const icons: Record<string, LucideIcon> = {
   Languages: Braces,
@@ -30,7 +31,7 @@ export function Skills() {
               <ul className="flex flex-wrap gap-2" aria-label={group.category}>
                 {group.items.map((item) => (
                   <li key={item}>
-                    <Tag>{item}</Tag>
+                    <TechTag name={item} />
                   </li>
                 ))}
               </ul>
