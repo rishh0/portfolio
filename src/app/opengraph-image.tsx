@@ -47,7 +47,7 @@ export default function OpengraphImage() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 96, fontWeight: 700, letterSpacing: -3 }}>Rishabh Yadav</div>
           <div style={{ marginTop: 12, fontSize: 36, color: "#93a9ff" }}>
-            Full-Stack Engineer / GenAI &amp; Agentic AI
+            Full-Stack &amp; AI Engineer
           </div>
         </div>
 

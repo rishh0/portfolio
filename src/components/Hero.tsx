@@ -39,7 +39,7 @@ export function Hero() {
             Rishabh Yadav
           </h1>
           <p className="mt-4 font-mono text-sm tracking-wide text-accent-soft sm:text-base">
-            Full-Stack Engineer <span className="text-line-strong">/</span> GenAI &amp; Agentic AI
+            Full-Stack &amp; AI Engineer
           </p>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-pretty text-muted">
             I build software people actually use, from polished web interfaces to AI features that cite their
