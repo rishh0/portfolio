@@ -10,7 +10,7 @@ const description =
   "Rishabh Yadav builds full-stack web products and GenAI and agentic AI applications with React, Next.js, TypeScript, FastAPI, LangChain and LangGraph.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rishabh-yadav-seven.vercel.app"),
+  metadataBase: new URL("https://rishabhyadav-dev.vercel.app"),
   alternates: { canonical: "/" },
   title,
   description,
