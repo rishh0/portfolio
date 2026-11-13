@@ -114,7 +114,7 @@ const sebi: FeaturedProject = {
     "SEBI Trading Compliance Assistant answering a question about the peak margin rule, with cited source documents",
 };
 
-const minimi: FeaturedProject = {
+const recall: FeaturedProject = {
   label: "Featured · AI Agent",
   stats: [
     { value: "38/38", label: "Eval checks passed" },
@@ -122,7 +122,7 @@ const minimi: FeaturedProject = {
     { value: "6", label: "Multi-day scenarios" },
   ],
   statsNote: "Scenario evals run with a fake clock and real API calls.",
-  name: "Minimi Agent",
+  name: "Recall",
   tagline: "Chat agent with long-term memory",
   description:
     "A web-search agent that remembers past conversations, understands dates like \"last Tuesday\" in your timezone, and re-checks its own earlier answers.",
@@ -134,13 +134,13 @@ const minimi: FeaturedProject = {
   ],
   stack: ["TypeScript", "Next.js", "Node.js", "Groq", "Tavily", "SQLite", "Zod"],
   github: "https://github.com/rishh0/minimi-agent",
-  image: "/projects/minimi.jpg",
+  image: "/projects/recall.jpg",
   imageAlt:
-    "Minimi Agent recalling a CRM shortlist from Monday and re-verifying each tool's pricing in a cited comparison table",
+    "Recall remembering a CRM shortlist from Monday and re-verifying each tool's pricing in a cited comparison table",
   note: "Runs locally with your own API keys",
 };
 
-export const featuredProjects: FeaturedProject[] = [sebi, minimi];
+export const featuredProjects: FeaturedProject[] = [sebi, recall];
 
 export const projects: Project[] = [
   {
