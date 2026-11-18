@@ -28,6 +28,8 @@ import {
   siMui,
   siNextdotjs,
   siNodedotjs,
+  siKeras,
+  siPandas,
   siPostgresql,
   siPrisma,
   siPytest,
@@ -37,6 +39,9 @@ import {
   siReacthookform,
   siRedux,
   siRender,
+  siScikitlearn,
+  siStreamlit,
+  siTensorflow,
   siSqlite,
   siTailwindcss,
   siTypescript,
@@ -77,6 +82,11 @@ const brand: Record<string, SimpleIcon> = {
   "Figma-to-Code": siFigma,
   "Razorpay Integration": siRazorpay,
   SQLite: siSqlite,
+  TensorFlow: siTensorflow,
+  Keras: siKeras,
+  "scikit-learn": siScikitlearn,
+  Pandas: siPandas,
+  Streamlit: siStreamlit,
 };
 
 const generic: Record<string, LucideIcon> = {

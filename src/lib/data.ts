@@ -160,6 +160,36 @@ export const projects: Project[] = [
     imageAlt: "NeuroGauge homepage hero reading 'See how every student really learns' with a sample cognitive profile card",
   },
   {
+    name: "LLM Search Agent",
+    tagline: "LangChain agent with web and paper search",
+    description:
+      "A chat app where an LLM agent decides which search tool to use, Arxiv, Wikipedia or DuckDuckGo, to answer a question and shows its reasoning steps as it works.",
+    highlights: [
+      "LangChain ReAct-style agent on Groq's llama-3.1-8b with three search tools",
+      "Streams the agent's thought and tool-call steps into the chat UI",
+      "Handles malformed model output with parsing-error recovery",
+      "An early agent project that led me to write my own tool-calling loop in Recall",
+    ],
+    stack: ["Python", "LangChain", "Groq", "Streamlit"],
+    github: "https://github.com/rishh0/Search-Engine-LLM",
+    note: "Runs locally with your own Groq key",
+  },
+  {
+    name: "Customer Churn Prediction",
+    tagline: "Deep learning on tabular data",
+    description:
+      "A neural network that predicts whether a bank customer will leave, served through a small web app where you enter customer details and get a prediction.",
+    highlights: [
+      "Artificial neural network trained in TensorFlow / Keras",
+      "Preprocessing with scikit-learn: scaling, label and one-hot encoding",
+      "Saved model and encoders loaded into a Streamlit app for live predictions",
+      "A learning project to practise the full deep learning workflow",
+    ],
+    stack: ["Python", "TensorFlow", "Keras", "scikit-learn", "Pandas", "Streamlit"],
+    github: "https://github.com/rishh0/ANN-Classification-Churn",
+    note: "Runs locally with Streamlit",
+  },
+  {
     name: "MentorLabs",
     tagline: "Website for TIET's startup mentorship lab",
     description:
