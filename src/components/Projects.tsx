@@ -29,7 +29,7 @@ function BrowserFrame({
       aria-label={
         project.live
           ? `${address}: open ${project.name} live site in a new tab`
-          : `${address}: open ${project.name} source code on GitHub`
+          : `${address}${project.image ? "" : ` ${project.note ?? "Preview unavailable"}`}: open ${project.name} source code on GitHub`
       }
       className={`${className} group block overflow-hidden rounded-xl border border-line bg-bg shadow-[0_20px_60px_-30px_rgb(0_0_0/0.9)] transition-colors hover:border-line-strong`}
     >
