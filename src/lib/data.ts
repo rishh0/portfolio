@@ -155,8 +155,7 @@ export const projects: Project[] = [
       "Report generation kept server-authoritative",
     ],
     stack: ["Next.js 15", "React 19", "TypeScript", "Prisma", "PostgreSQL"],
-    live: "https://neurogauge.ritikcrafts.org",
-    note: "Live preview temporarily unavailable",
+    live: "https://neuro-gauge-git-main-ritik92s-projects.vercel.app/",
   },
   {
     name: "MentorLabs",
