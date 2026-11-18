@@ -21,7 +21,7 @@ const channels: Channel[] = [
 
 export function Contact() {
   return (
-    <Section id="contact" index="05" label="Contact" title="Have an interesting project or opportunity? Let's connect.">
+    <Section id="contact" index="06" label="Contact" title="Have an interesting project or opportunity? Let's connect.">
       <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
         <div>
           <p className="max-w-md text-lg leading-relaxed text-muted">
