@@ -48,7 +48,7 @@ export function Navbar() {
       }`}
     >
       <Container className="flex h-16 items-center justify-between">
-        <a href="#home" className="group flex items-center gap-2.5" aria-label="Rishabh Yadav — back to top">
+        <a href="#home" className="group flex items-center gap-2.5" aria-label="RY Rishabh Yadav, back to top">
           <span className="grid size-7 place-items-center rounded-md border border-line-strong bg-card font-mono text-[11px] font-semibold text-fg transition-colors group-hover:border-accent">
             RY
           </span>
