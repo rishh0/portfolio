@@ -100,7 +100,7 @@ const generic: Record<string, LucideIcon> = {
   Groq: Cpu,
   Tavily: Globe,
   "Streaming Responses": Activity,
-  "LLM Evaluation": ClipboardCheck,
+  "LLM Evals": ClipboardCheck,
   "Performance Optimization": Gauge,
 };
 
