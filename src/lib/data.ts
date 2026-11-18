@@ -156,6 +156,8 @@ export const projects: Project[] = [
     ],
     stack: ["Next.js 15", "React 19", "TypeScript", "Prisma", "PostgreSQL"],
     live: "https://neuro-gauge-git-main-ritik92s-projects.vercel.app/",
+    image: "/projects/neurogauge.jpg",
+    imageAlt: "NeuroGauge homepage hero reading 'See how every student really learns' with a sample cognitive profile card",
   },
   {
     name: "MentorLabs",
