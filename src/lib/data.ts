@@ -152,6 +152,21 @@ export const projects: Project[] = [
     imageAlt: "NeuroGauge homepage hero reading 'See how every student really learns' with a sample cognitive profile card",
   },
   {
+    name: "MentorLabs",
+    tagline: "Website for TIET's startup mentorship lab",
+    description:
+      "The public website for Mentor Labs, a startup mentorship and incubation initiative at TIET, built as part of a team.",
+    highlights: [
+      "Pages for programs, people, research, events and contact",
+      "Landing page with a rotating news carousel and services overview",
+      "Member login entry point",
+    ],
+    stack: ["Next.js", "Tailwind CSS"],
+    live: "https://tiet-venturelab.vercel.app/",
+    image: "/projects/mentorlabs.jpg",
+    imageAlt: "Mentor Labs homepage hero reading 'Where Ideas Meet Opportunity'",
+  },
+  {
     name: "LLM Search Agent",
     tagline: "LangChain agent with web and paper search",
     description:
@@ -180,21 +195,6 @@ export const projects: Project[] = [
     stack: ["Python", "TensorFlow", "Keras", "scikit-learn", "Pandas", "Streamlit"],
     github: "https://github.com/rishh0/ANN-Classification-Churn",
     note: "Runs locally with Streamlit",
-  },
-  {
-    name: "MentorLabs",
-    tagline: "Website for TIET's startup mentorship lab",
-    description:
-      "The public website for Mentor Labs, a startup mentorship and incubation initiative at TIET, built as part of a team.",
-    highlights: [
-      "Pages for programs, people, research, events and contact",
-      "Landing page with a rotating news carousel and services overview",
-      "Member login entry point",
-    ],
-    stack: ["Next.js", "Tailwind CSS"],
-    live: "https://tiet-venturelab.vercel.app/",
-    image: "/projects/mentorlabs.jpg",
-    imageAlt: "Mentor Labs homepage hero reading 'Where Ideas Meet Opportunity'",
   },
 ];
 
